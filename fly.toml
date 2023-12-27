@@ -1,4 +1,4 @@
-# fly.toml app configuration file generated for noitamap on 2023-12-27T07:09:42+06:00
+# fly.toml app configuration file generated for noitamaptest on 2023-12-27T18:53:00+06:00
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
@@ -7,7 +7,6 @@ app = "noitamaptest"
 primary_region = "dfw"
 
 [build]
-  dockerfile = "Dockerfile"
 
 [http_service]
   internal_port = 80
