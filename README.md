@@ -1,4 +1,6 @@
-# Noitamap — [map.runfast.stream](https://map.runfast.stream)
+# ![](https://github.com/WUOTE/noitamap/blob/main/public/assets/Noitamap%20logo.png) Noitamap — [map.runfast.stream](https://map.runfast.stream)
+
+
 
 Zoomable map for Noita which runs _fast_
 
