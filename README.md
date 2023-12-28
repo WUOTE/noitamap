@@ -1,4 +1,4 @@
-# ![](https://github.com/WUOTE/noitamap/blob/main/public/assets/Noitamap%20logo.png) Noitamap — [map.runfast.stream](https://map.runfast.stream)
+# ![](https://github.com/WUOTE/noitamap/blob/main/public/assets/NoitamapLogo.png) Noitamap — [map.runfast.stream](https://map.runfast.stream)
 
 
 
