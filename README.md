@@ -19,6 +19,10 @@ Contributions and discussions are welcome, feel free to open PRs and issues.
 2. Better map capture (no artifacts, maybe a better seed to show more structures and secrets) — if you have a good seed # for that, open an issue.
 3. Layers, overlays, and points of interests — similar to the [current map on easyzoom](https://easyzoom.com/image/260463).
 4. Add a section with the info on how to re-deploy the map should the instance I'm hosting break for some reason.
+5. Be able to see the pixel coordinates of various places on the map — suggested by pudy248. Maybe implement it as a toggable overlay?
+
+    ![image](https://github.com/WUOTE/noitamap/assets/106106310/dcf35bf6-036c-4145-b07b-31bd7b9a45b8)
+
 
 ## Thanks
 Huge thanks to [@Dadido3](https://github.com/Dadido3) and [@myndzi](https://github.com/myndzi) for their work, their help, and advice!
