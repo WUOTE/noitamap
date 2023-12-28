@@ -27,4 +27,4 @@ Contributions and discussions are welcome, feel free to open PRs and issues.
 
 
 ## Thanks
-Huge thanks to [@Dadido3](https://github.com/Dadido3) and [@myndzi](https://github.com/myndzi) for their work, their help, and advice!
+Huge thanks to [@Dadido3](https://github.com/Dadido3) and [@myndzi](https://github.com/myndzi) for their work, their help, and advice! Thanks to [Arganvain](https://www.twitch.tv/arganvain) for fixing the logo I initially made.
