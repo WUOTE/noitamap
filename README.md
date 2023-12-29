@@ -4,6 +4,8 @@
 
 Zoomable map for Noita which runs _fast_
 
+![image](https://github.com/WUOTE/noitamap/assets/106106310/60ef19b6-8849-4c88-950f-406a4a5f9a30)
+
 > TLDR: This repo contains sources for a very high-resolution highly-performant map for the video game called [Noita](https://store.steampowered.com/app/881100/Noita/). Noitamap uses [OpenSeadragon](https://github.com/openseadragon/openseadragon).
 This repo is basically a fork of whalehub's repo, which has been deleted from github but we had a [lucky fork](https://github.com/quiddity-wp/noita-map-viewer) with updated version of openseadragon and probably a different algo for creating the "pyramid" (zoomable) tiles.
 
