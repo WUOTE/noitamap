@@ -15,7 +15,7 @@ var os = OpenSeadragon({
 	smoothTileEdgesMinZoom: 1,
 	minScrollDeltaTime: 10,
 	springStiffness: 50,
-	tileSources: ["maps/regular/noita-2023-12-19-110638.dzi"]
+	tileSources: ["maps/regular/betamap-2023-12-19-786433191.dzi"]
 	/*overlays: [{
 		className: "overlay-highlight",
 		x: 0.33,
