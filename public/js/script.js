@@ -1,3 +1,14 @@
+tileSources = ["maps/regular/betamap-2023-12-19-786433191.dzi",
+	"maps/nightmare/2023-12-30-nightmare.dzi"];
+
+tileSources = tileSources.map(function (tileSource, i) {
+	return {
+		tileSource: tileSource,
+		opacity: i === 0 ? 1 : 0,
+		preload: i === 1 ? true : false
+	};
+});
+
 var os = OpenSeadragon({
 	id: "os-container",
 	prefixUrl: "vendor/openseadragon-bin-4.1.0/images/",
@@ -6,16 +17,17 @@ var os = OpenSeadragon({
 	maxZoomPixelRatio: 20,
 	defaultZoomLevel: 0,
 	showNavigator: true,
-	navigatorPosition: "BOTTOM_RIGHT",
-	navigatorDisplayRegionColor: "#777777",
+	navigatorPosition: "TOP_RIGHT",
+	navigatorDisplayRegionColor: "#FF0000",
 	navigatorHeight: 285,
 	navigatorWidth: 200,
 	imageSmoothingEnabled: false,
+	tileSources: tileSources,
 	subPixelRoundingForTransparency: OpenSeadragon.SUBPIXEL_ROUNDING_OCCURRENCES.ALWAYS,
 	smoothTileEdgesMinZoom: 1,
 	minScrollDeltaTime: 10,
 	springStiffness: 50,
-	tileSources: ["maps/regular/betamap-2023-12-19-786433191.dzi"]
+
 	/*overlays: [{
 		className: "overlay-highlight",
 		x: 0.33,
@@ -24,3 +36,33 @@ var os = OpenSeadragon({
 		height: 0.25
 	}]*/
 });
+
+$('.next').on('click', function () {
+	var oldTiledImage = viewer.world.getItemAt(index);
+
+	index = (index + 1) % tileSources.length;
+	var nextIndex = (index + 1) % tileSources.length;
+
+	var newTiledImage = viewer.world.getItemAt(index);
+	var nextTiledImage = viewer.world.getItemAt(nextIndex);
+
+	oldTiledImage.setOpacity(0);
+	newTiledImage.setOpacity(1);
+	nextTiledImage.setPreload(true);
+});
+
+var index = 0;
+
+$('.next').on('click', function () {
+	var oldTiledImage = viewer.world.getItemAt(index);
+
+	index = (index + 1) % tileSources.length;
+	var nextIndex = (index + 1) % tileSources.length;
+
+	var newTiledImage = viewer.world.getItemAt(index);
+	var nextTiledImage = viewer.world.getItemAt(nextIndex);
+
+	oldTiledImage.setOpacity(0);
+	newTiledImage.setOpacity(1);
+	nextTiledImage.setPreload(true);
+}); 
