@@ -1,5 +1,8 @@
-tileSources = ["maps/regular/betamap-2023-12-19-786433191.dzi",
-	"maps/nightmare/2023-12-30-nightmare.dzi"];
+tileSources = ["maps/regular/betamap-2023-12-30-786433191.dzi",
+	"maps/nightmare/2023-12-30-nightmare.dzi"
+];
+
+var index = 0;
 
 tileSources = tileSources.map(function (tileSource, i) {
 	return {
@@ -37,32 +40,30 @@ var os = OpenSeadragon({
 	}]*/
 });
 
-$('.next').on('click', function () {
-	var oldTiledImage = viewer.world.getItemAt(index);
+function nextMap() {
+	var oldTiledImage = os.world.getItemAt(index);
 
 	index = (index + 1) % tileSources.length;
 	var nextIndex = (index + 1) % tileSources.length;
 
-	var newTiledImage = viewer.world.getItemAt(index);
-	var nextTiledImage = viewer.world.getItemAt(nextIndex);
+	var newTiledImage = os.world.getItemAt(index);
+	var nextTiledImage = os.world.getItemAt(nextIndex);
 
 	oldTiledImage.setOpacity(0);
 	newTiledImage.setOpacity(1);
 	nextTiledImage.setPreload(true);
-});
-
-var index = 0;
-
-$('.next').on('click', function () {
-	var oldTiledImage = viewer.world.getItemAt(index);
-
-	index = (index + 1) % tileSources.length;
-	var nextIndex = (index + 1) % tileSources.length;
-
-	var newTiledImage = viewer.world.getItemAt(index);
-	var nextTiledImage = viewer.world.getItemAt(nextIndex);
-
-	oldTiledImage.setOpacity(0);
-	newTiledImage.setOpacity(1);
-	nextTiledImage.setPreload(true);
-}); 
+	switch (index) {
+		case 0: {
+			document.getElementById("currentMap").innerHTML = "Noitamap — regular map";
+			break;
+		}
+		case 1: {
+			document.getElementById("currentMap").innerHTML = "Noitamap — nightmare map";
+			break;
+		}
+		default: {
+			document.getElementById("currentMap").innerHTML = "Noitamap";
+			break;
+		}
+	}
+}; 
