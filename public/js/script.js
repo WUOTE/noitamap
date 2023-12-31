@@ -1,5 +1,6 @@
-tileSources = ["maps/regular/betamap-2023-12-19-786433191.dzi",
-	"maps/nightmare/2023-12-30-nightmare.dzi"];
+tileSources = ["maps/nightmare/2023-12-30-nightmare.dzi",
+	"maps/regular/betamap-2023-12-19-786433191.dzi"
+];
 
 tileSources = tileSources.map(function (tileSource, i) {
 	return {
