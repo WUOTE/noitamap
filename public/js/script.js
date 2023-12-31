@@ -41,13 +41,13 @@ var os = OpenSeadragon({
 });
 
 function nextMap() {
-	var oldTiledImage = viewer.world.getItemAt(index);
+	var oldTiledImage = os.world.getItemAt(index);
 
 	index = (index + 1) % tileSources.length;
 	var nextIndex = (index + 1) % tileSources.length;
 
-	var newTiledImage = viewer.world.getItemAt(index);
-	var nextTiledImage = viewer.world.getItemAt(nextIndex);
+	var newTiledImage = os.world.getItemAt(index);
+	var nextTiledImage = os.world.getItemAt(nextIndex);
 
 	oldTiledImage.setOpacity(0);
 	newTiledImage.setOpacity(1);
