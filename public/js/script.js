@@ -52,4 +52,18 @@ function nextMap() {
 	oldTiledImage.setOpacity(0);
 	newTiledImage.setOpacity(1);
 	nextTiledImage.setPreload(true);
+	switch (index) {
+		case 0: {
+			document.getElementById("currentMap").innerHTML = "Noitamap — regular map";
+			break;
+		}
+		case 1: {
+			document.getElementById("currentMap").innerHTML = "Noitamap — nightmare map";
+			break;
+		}
+		default: {
+			document.getElementById("currentMap").innerHTML = "Noitamap";
+			break;
+		}
+	}
 }; 
