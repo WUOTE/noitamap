@@ -2,6 +2,8 @@ tileSources = ["maps/regular/betamap-2023-12-30-786433191.dzi",
 	"maps/nightmare/2023-12-30-nightmare.dzi"
 ];
 
+var index = 0;
+
 tileSources = tileSources.map(function (tileSource, i) {
 	return {
 		tileSource: tileSource,
@@ -38,7 +40,7 @@ var os = OpenSeadragon({
 	}]*/
 });
 
-$('.next').on('click', function () {
+function nextMap() {
 	var oldTiledImage = viewer.world.getItemAt(index);
 
 	index = (index + 1) % tileSources.length;
@@ -50,20 +52,4 @@ $('.next').on('click', function () {
 	oldTiledImage.setOpacity(0);
 	newTiledImage.setOpacity(1);
 	nextTiledImage.setPreload(true);
-});
-
-var index = 0;
-
-$('.next').on('click', function () {
-	var oldTiledImage = viewer.world.getItemAt(index);
-
-	index = (index + 1) % tileSources.length;
-	var nextIndex = (index + 1) % tileSources.length;
-
-	var newTiledImage = viewer.world.getItemAt(index);
-	var nextTiledImage = viewer.world.getItemAt(nextIndex);
-
-	oldTiledImage.setOpacity(0);
-	newTiledImage.setOpacity(1);
-	nextTiledImage.setPreload(true);
-}); 
+}; 
