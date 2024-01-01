@@ -1,4 +1,4 @@
-tileSources = ["maps/regular/betamap-2023-12-30-786433191.dzi",
+tileSources = ["maps/regular/regular-2023-12-30-786433191.dzi",
 	"maps/nightmare/2023-12-30-nightmare.dzi"
 ];
 
