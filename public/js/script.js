@@ -1,5 +1,6 @@
 tileSources = ["maps/regular/regular-2023-12-30-786433191.dzi",
-	"maps/nightmare/nightmare-2023-12-30-786433191.dzi"
+	"maps/nightmare/nightmare-2023-12-30-786433191.dzi",
+	"maps/new-game-plus/new-game-plus-2023-12-30-786433191.dzi"
 ];
 
 var index = 0;
@@ -54,11 +55,15 @@ function nextMap() {
 	nextTiledImage.setPreload(true);
 	switch (index) {
 		case 0: {
-			document.getElementById("currentMap").innerHTML = "Noitamap — regular map";
+			document.getElementById("currentMap").innerHTML = "Noitamap — Regular Map";
 			break;
 		}
 		case 1: {
-			document.getElementById("currentMap").innerHTML = "Noitamap — nightmare map";
+			document.getElementById("currentMap").innerHTML = "Noitamap — Nightmare Map";
+			break;
+		}
+		case 2: {
+			document.getElementById("currentMap").innerHTML = "Noitamap — New Game+ Map";
 			break;
 		}
 		default: {
