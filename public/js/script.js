@@ -55,19 +55,19 @@ function nextMap() {
 	nextTiledImage.setPreload(true);
 	switch (index) {
 		case 0: {
-			document.getElementById("currentMap").innerHTML = "Noitamap — Regular Map";
+			document.getElementById("currentMap").innerHTML = "Noitamap — Regular Map (beta branch)";
 			break;
 		}
 		case 1: {
-			document.getElementById("currentMap").innerHTML = "Noitamap — Nightmare Map";
+			document.getElementById("currentMap").innerHTML = "Noitamap — Nightmare Map (beta branch)";
 			break;
 		}
 		case 2: {
-			document.getElementById("currentMap").innerHTML = "Noitamap — New Game+ Map";
+			document.getElementById("currentMap").innerHTML = "Noitamap — New Game+ Map (beta branch)";
 			break;
 		}
 		default: {
-			document.getElementById("currentMap").innerHTML = "Noitamap";
+			document.getElementById("currentMap").innerHTML = "Noitamap (beta branch)";
 			break;
 		}
 	}
